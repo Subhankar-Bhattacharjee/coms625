@@ -28,7 +28,7 @@ Make sure you have the following installed on your system:
    python3 1_trace_suspecious_score_report.py
 
 5. **Generate LLVM Intermediate Representation**
-   clang -S -emit-llvm -g -o minmax.ll minmax.c
+   clang -S -emit-llvm -g -o program.ll program.c
 
 6. **Update JSON Using Intermediate Information**
    python3 2_updated_json_using_II.py
@@ -37,10 +37,12 @@ Make sure you have the following installed on your system:
    python3 3_map_suspecious_score_PDG.py
 
 8. **Generate Highlighted PDG Visualization**
-   dot -Tpng highlighted_pdg.dot -o PDG.png
+   dot -Tpng highlighted_nodes_pdg.dot -o PDG_highlighted_PNG.png
 
 9. **Generate Updated PDG JSON**
-   python3 4_generate_PDG_json.py
+   python3 4_generate_modified_PDG_json.py
 
 10. **Generate Original PDG Visualization**
-   dot -Tpng PDG_Original.dot -o PDG_org.png
+   dot -Tpng PDG_Dot_File.dot -o PDG_PNG_File.png
+
+The examples directory contains, toy example file for this tool. Follow the above instruction to get the results.
