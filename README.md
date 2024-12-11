@@ -19,7 +19,7 @@ Make sure you have the following installed on your system:
    docker build -t 625-project .
 
 2. **Run the Docker Image**
-   docker run -it -v /Users/subhankarbhattacharjee/Desktop/ISU/Fall2024/COMS625/project/work:/usr/src/app 625-project
+   docker run -it -v /Local_path:/usr/src/app 625-project
 
 3. **Install dependencies**
    pip3 install --break-system-packages networkx
